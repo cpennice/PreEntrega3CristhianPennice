@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carrito de compras</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Carrito de compras</h1>
+    <table id="cartTable">
+      <thead>
+        <tr>
+          <th>Nombre del artículo</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody id="cartBody"></tbody>
+    </table>
+    <p id="total">
+      Valor total de los artículos en tu carrito: $<span id="totalValue"
+        >0</span
+      >
+    </p>
+    <div><button id="addItemButton">Agregar artículo</button></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
